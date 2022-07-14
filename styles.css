@@ -1,81 +1,188 @@
-html {
-    background: #CCCCCC;
-
-}
 body {
-    background: azure;
+    background-color:white;
+    font-family: "Open Sans", sans-serif;
 }
 header {
-width: 198px;
-height: 36px;
-left: 80px;
-top: 0.5px;
+display: inline-flex;
+flex-direction: row;
+justify-content: space-between;
+padding: 20px;
+width: 100%;
 }
+header nav a {
+height: 20px;
+color: #555555;
+flex: none;
+flex-grow: 1;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 100%;
+margin-right: 50px;
+order: 0;
+padding: 10px;
+text-decoration: none;
+width: 82px;
+}
+
+  
+header nav .sign {
+    color: rgb(218, 110, 185); 
+    
+}
+    @media  (max-width:768px ) {
+    header nav{
+        display: none;
+    }
+}
+    @media  (min-width:768px ) {
+        .header-menu {
+            display: none;
+        }
+    }
+        
 .header-logo {
     margin-left: 1px;
+    padding: 10px;
+    height:20px;
 }
 .header-menu {
     margin-right: 1px;
+    padding: 20px;
 }
 .soon {
-    display: flex;
+    display: inline-flex;
     align-items: flex-start;
+    padding: 50px;
 }
 .soon img{
-width: 175.69px;
-height: 278px;
+width: 250px;
+height: 420px;
 left: 327.68px;
+margin-right: 1px;
+padding: 30px;
 top: 110px;
 }
+@media (min-width:768px) {
+    .soon .mobile {
+        display: none;
+    }
+}
+    @media  (max-width:768px ){
+        .soon .desktop {
+            display: none;
+        }
+    }
 button {
    border-radius: 20rem;
    border-color: orange;
    filter: blur();
    padding: 10 25px;
 }
+.lialia {
+    width: 50%;
+}
+.soondiv {
+    width: 50%;
+}
+.orange div {
+position: absolute; 
+text-align: bottom left;
+
+}
 .orange img{
 font-family: 'Inter';
 font-style: normal;
+width: 100%;
 
+}
+.orange p {
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 100%;
+margin-left: 10px;
+
+
+}
+.icons{
+    display: inline;
+    gap: 5px;
+    width: 100%;
+    padding: 50px;
+}
+.icons img {
+   grid-template-columns: repeat(5, 1fr);
 }
 h1 {
     font-family: 'Inter';
     font-style: bold;
     font-weight: 900;
     font-size: 48px;
-    line-height: 38px;
+    line-height: 90%;
+    align-items: left;
+    vertical-align: top;
 }
-h2 {
-    width: 274px;
+h2 {  
 height: 204px;
 left: 32px;
 top: 2044px;
-
+width: 274px;
 font-family: 'Inter';
 font-style: normal;
 font-weight: 300;
 font-size: 56px;
 line-height: 68px;
 }
-h6 {
+ h3 {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 300;
+font-size: 30px;
+line-height: 28px;
+display: flex;
+align-items: flex-end;
+padding: 0px 10px;
+ }
+h4 {
     color: rgb(218, 110, 185);
-    text-decoration: solid;
+    font-style: bold;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-size: 10px;
     line-height: 19.36px;
-    letter-spacing: 10%''
+    letter-spacing: 10%;
 }
+.open a {
+    color: #555555;
+    font-style: bold;
+}
+.cards {
+    box-sizing: border-box;
+    background: transparent;
+    border-radius:15px;
+    display: flex;
+    gap: 20px;
+    overflow: auto;
+  white-space: nowrap;
+  padding: 5px 70px 5px 20px;
+  width: 100%;
+}
+
 article p {
-    width: 86px;
-left: 24px;
-top: 75.5%;
-bottom: 21.5%;
+    width: 130px;
+    left: 24px;
+    top: 75.5%;
+    bottom: 21.5%;
     color: orange;
     font-weight: 700;
     font-size: 10px;
     line-height: 38px;
     text-transform: uppercase;
-
-
+}
+article {
+    background: #e4dfdf;
+    position: relative;
+    
 }
