@@ -1,13 +1,14 @@
 body {
     background-color:white;
     font-family: "Open Sans", sans-serif;
+    width: 90%;
 }
 header {
 display: inline-flex;
 flex-direction: row;
 justify-content: space-between;
 padding: 20px;
-width: 100%;
+width: 90%;
 }
 header nav a {
 height: 20px;
@@ -25,22 +26,10 @@ padding: 10px;
 text-decoration: none;
 width: 82px;
 }
-
-  
 header nav .sign {
     color: rgb(218, 110, 185); 
     
 }
-    @media  (max-width:768px ) {
-    header nav{
-        display: none;
-    }
-}
-    @media  (min-width:768px ) {
-        .header-menu {
-            display: none;
-        }
-    }
         
 .header-logo {
     margin-left: 1px;
@@ -53,27 +42,18 @@ header nav .sign {
 }
 .soon {
     display: inline-flex;
-    align-items: flex-start;
-    padding: 50px;
+    justify-content: space-between;
+    padding: 100px 50px ;
 }
 .soon img{
-width: 250px;
 height: 420px;
-left: 327.68px;
-margin-right: 1px;
-padding: 30px;
+margin: 1px; 
+object-fit:contain;
+padding: 30px 0 20px 50px;
 top: 110px;
+width: 250px;
 }
-@media (min-width:768px) {
-    .soon .mobile {
-        display: none;
-    }
-}
-    @media  (max-width:768px ){
-        .soon .desktop {
-            display: none;
-        }
-    }
+
 button {
    border-radius: 20rem;
    border-color: orange;
@@ -89,31 +69,43 @@ button {
 .orange div {
 position: absolute; 
 text-align: bottom left;
+padding: 50px;
 
 }
 .orange img{
 font-family: 'Inter';
 font-style: normal;
-width: 100%;
+object-fit:contain;
+float: inline-start;
+padding: 50px;
+width: 90%;
+height: auto;
 
 }
 .orange p {
 font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 100%;
+font-weight: 200;
+font-size: 10px;
+line-height: 90%;
 margin-left: 10px;
-
-
+text-transform: uppercase;
 }
+
 .icons{
-    display: inline;
-    gap: 5px;
-    width: 100%;
+    display: inline-flex;
+    gap: 120px;
     padding: 50px;
+    width: 90%;
 }
 .icons img {
    grid-template-columns: repeat(5, 1fr);
+}
+
+.text-cards h3 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 38px;
+    font-weight: 550;
 }
 h1 {
     font-family: 'Inter';
@@ -134,9 +126,10 @@ font-style: normal;
 font-weight: 300;
 font-size: 56px;
 line-height: 68px;
+text-transform: uppercase;
 }
  h3 {
-    font-family: 'Inter';
+font-family: 'Inter';
 font-style: normal;
 font-weight: 300;
 font-size: 30px;
@@ -150,39 +143,184 @@ h4 {
     font-style: bold;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
-    font-size: 10px;
+    font-size: 15px;
     line-height: 19.36px;
     letter-spacing: 10%;
+}
+h5 {
+    color: #9c9999;
+    font-size: 10px;
+}
+h6 {
+    color: #9c9999;
+
 }
 .open a {
     color: #555555;
     font-style: bold;
 }
 .cards {
-    box-sizing: border-box;
-    background: transparent;
+    box-sizing: content-box;
+    background-size:contain;
     border-radius:15px;
     display: flex;
     gap: 20px;
     overflow: auto;
-  white-space: nowrap;
-  padding: 5px 70px 5px 20px;
-  width: 100%;
+    white-space: nowrap;
+    padding: 5px 70px 5px 20px;
 }
-
+.text-cards {
+    padding: 20px;
+}
 article p {
-    width: 130px;
     left: 24px;
-    top: 75.5%;
-    bottom: 21.5%;
     color: orange;
-    font-weight: 700;
+    font-weight: 200;
     font-size: 10px;
-    line-height: 38px;
     text-transform: uppercase;
+}
+article h4 {
+color: black;
+font-family:'Times New Roman', Times, serif;
+font-style: bold;
+font-weight: 300;
+font-size: 20px;
 }
 article {
     background: #e4dfdf;
-    position: relative;
-    
+    border-radius: 15px;
+    position:relative;
+    height: 420px;
 }
+.price > div {
+    display: inline-block;
+    padding: 0 20px;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+.girl-box {
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 50px 0 20px 50px;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+.girl img{
+height: 420px;
+left: 327.68px;
+margin-right: 1px;
+padding: 50px 0 20px 50px;
+top: 110px;
+width: 150px;
+}
+
+    footer {
+        display: inline-flex;
+        justify-content: space-between;
+        padding: 30px;
+        width: 90%;
+    }
+    .icons-soc img {
+        padding: 5px;
+    }
+    .right {
+        color: #555555;
+        display: flex;
+        column-count: 4;
+        column-gap: 1em;
+        padding: 10px;
+    }
+    ul a{
+    color: #9c9999;
+    display: flex;
+    flex-direction: column;
+    font-style: bold;
+    font-size: 0.9em;
+    font-family: "Open Sans", helvetica, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif;
+    height: 8px;
+    }
+    
+    .bottom {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 90%;
+    }
+    .bottom p{
+        color: #9c9999;
+        padding: 20px;
+        margin-bottom: 50px;
+        margin-left: 20px;
+    }
+
+
+    @media  (max-width:768px ) {
+        header nav{
+            display: none;
+        }
+    }
+        @media  (min-width:768px ) {
+            .header-menu {
+                display: none;
+            }
+        }
+    @media (min-width:768px) {
+        .soon .mobile {
+            display: none;
+        }
+    }
+        @media  (max-width:768px ){
+            .soon .desktop {
+                display: none; 
+            }
+        }
+       
+            @media (max-width:768px) {
+                .orange img {
+                    width: 100%;
+                    height: auto;
+                    object-fit:100%;
+                    padding-left: 0;
+                }
+            }
+            
+            @media (max-width:768px) {
+                .icons {
+                   display: flex;
+                   flex-direction: row;
+                   flex-wrap: wrap;
+                   gap: 40px;
+                }
+                .icons .V4 {
+                   display: none;
+                }
+            }
+            @media (min-width:768px) {
+                .girl .mobile {
+                    display: none;
+                }
+            }
+                @media  (max-width:768px ){
+                    .girl .desktop {
+                        display: none;
+                    }
+                }
+                @media  (max-width:768px ){
+                    footer {
+                        display: flex;
+                        flex-wrap: wrap;
+                    }
+                    .left {
+                        padding: 20px;
+                    }
+                    .right {
+                        display: flex;
+                        flex-wrap: wrap;
+                    }
+                    .right > div {
+                        padding: 5px 20px;
+                    }
+            
+                    .bottom :nth-child(2){
+                        display:none;
+                    }
+                }
